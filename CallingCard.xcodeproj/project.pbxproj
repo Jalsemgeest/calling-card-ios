@@ -13,6 +13,8 @@
 		C4CABA271D6E636C00D8F21C /* CallingCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA251D6E636C00D8F21C /* CallingCard.xcdatamodeld */; };
 		C4CABA291D6E636C00D8F21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4CABA281D6E636C00D8F21C /* Assets.xcassets */; };
 		C4CABA2C1D6E636C00D8F21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CABA2A1D6E636C00D8F21C /* LaunchScreen.storyboard */; };
+		C4CABA351D6E7DDC00D8F21C /* LoginWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA341D6E7DDC00D8F21C /* LoginWebViewController.swift */; };
+		C4CABA371D6E93C000D8F21C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA361D6E93C000D8F21C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C4CABA281D6E636C00D8F21C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4CABA2B1D6E636C00D8F21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4CABA2D1D6E636C00D8F21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4CABA341D6E7DDC00D8F21C /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWebViewController.swift; sourceTree = "<group>"; };
+		C4CABA361D6E93C000D8F21C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		C4CABA1D1D6E636C00D8F21C /* CallingCard */ = {
 			isa = PBXGroup;
 			children = (
+				C4CABA381D6E93C300D8F21C /* Models */,
 				C4CABA1E1D6E636C00D8F21C /* AppDelegate.swift */,
 				C4CABA201D6E636C00D8F21C /* ViewController.swift */,
 				C4CABA221D6E636C00D8F21C /* Main.storyboard */,
+				C4CABA331D6E6AE200D8F21C /* Supporting Files */,
+				C4CABA341D6E7DDC00D8F21C /* LoginWebViewController.swift */,
+			);
+			path = CallingCard;
+			sourceTree = "<group>";
+		};
+		C4CABA331D6E6AE200D8F21C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				C4CABA281D6E636C00D8F21C /* Assets.xcassets */,
 				C4CABA2A1D6E636C00D8F21C /* LaunchScreen.storyboard */,
 				C4CABA2D1D6E636C00D8F21C /* Info.plist */,
 				C4CABA251D6E636C00D8F21C /* CallingCard.xcdatamodeld */,
 			);
-			path = CallingCard;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4CABA381D6E93C300D8F21C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4CABA361D6E93C000D8F21C /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +121,7 @@
 				TargetAttributes = {
 					C4CABA1A1D6E636C00D8F21C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = G5D6E9ANBZ;
 					};
 				};
 			};
@@ -139,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4CABA211D6E636C00D8F21C /* ViewController.swift in Sources */,
+				C4CABA351D6E7DDC00D8F21C /* LoginWebViewController.swift in Sources */,
 				C4CABA271D6E636C00D8F21C /* CallingCard.xcdatamodeld in Sources */,
+				C4CABA371D6E93C000D8F21C /* User.swift in Sources */,
 				C4CABA1F1D6E636C00D8F21C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CallingCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jalsemgeest.CallingCard;
@@ -266,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CallingCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jalsemgeest.CallingCard;

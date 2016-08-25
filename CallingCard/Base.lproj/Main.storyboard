@@ -1,25 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Login Web View Controller-->
+        <scene sceneID="RHo-mO-aMk">
+            <objects>
+                <viewController id="BWr-6M-FqF" customClass="LoginWebViewController" customModule="CallingCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vw3-nv-sof"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGR-VX-eRc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="31G-ju-HaA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wt-iP-ZQ7">
+                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
+                                <items>
+                                    <barButtonItem title="Back" id="X3x-mc-YWM">
+                                        <connections>
+                                            <action selector="goBack:" destination="BWr-6M-FqF" id="qBw-Tr-jex"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipO-rh-2cv">
+                                <rect key="frame" x="-4" y="64" width="383" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ipO-rh-2cv" firstAttribute="leading" secondItem="31G-ju-HaA" secondAttribute="leadingMargin" constant="-20" id="13v-Mh-0ai"/>
+                            <constraint firstItem="3wt-iP-ZQ7" firstAttribute="leading" secondItem="31G-ju-HaA" secondAttribute="leadingMargin" constant="-20" id="2gG-Ys-sBk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ipO-rh-2cv" secondAttribute="trailing" constant="-20" id="9Nc-66-0xL"/>
+                            <constraint firstItem="3wt-iP-ZQ7" firstAttribute="top" secondItem="Vw3-nv-sof" secondAttribute="bottom" id="GR4-db-O05"/>
+                            <constraint firstItem="3wt-iP-ZQ7" firstAttribute="leading" secondItem="31G-ju-HaA" secondAttribute="leadingMargin" constant="-20" id="SGX-Uc-Uvm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3wt-iP-ZQ7" secondAttribute="trailing" constant="-20" id="XJo-0p-r6G"/>
+                            <constraint firstItem="RGR-VX-eRc" firstAttribute="top" secondItem="ipO-rh-2cv" secondAttribute="bottom" id="pPu-hV-cdb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3wt-iP-ZQ7" secondAttribute="trailing" id="qnw-YF-MH7"/>
+                            <constraint firstItem="ipO-rh-2cv" firstAttribute="top" secondItem="3wt-iP-ZQ7" secondAttribute="bottom" id="sJm-U4-ikC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2gG-Ys-sBk"/>
+                                <exclude reference="qnw-YF-MH7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="webView" destination="ipO-rh-2cv" id="1wt-tM-UKZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7F-hI-UlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="-454.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CallingCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sv-YF-Ctu">
+                                <rect key="frame" x="168" y="319" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="BWr-6M-FqF" kind="presentation" identifier="idSegueShowWebVC" id="pGa-Bh-CTl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9u-K1-2B3">
+                                <rect key="frame" x="156.5" y="357" width="61" height="30"/>
+                                <state key="normal" title="Get Data"/>
+                                <connections>
+                                    <action selector="getLinkedInData" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKC-WW-wVh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqc-kh-8sb">
+                                <rect key="frame" x="20" y="395" width="335" height="30"/>
+                                <state key="normal" title="url"/>
+                                <connections>
+                                    <action selector="goToUrl" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwW-WF-jUd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nqc-kh-8sb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B6N-2p-1w2"/>
+                            <constraint firstItem="P9u-K1-2B3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CbO-Yq-lm5"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Nqc-kh-8sb" secondAttribute="leading" id="DBx-hK-sFc"/>
+                            <constraint firstItem="Nqc-kh-8sb" firstAttribute="top" secondItem="P9u-K1-2B3" secondAttribute="bottom" constant="8" id="PWv-7w-POl"/>
+                            <constraint firstItem="4sv-YF-Ctu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RWB-l8-9br"/>
+                            <constraint firstItem="4sv-YF-Ctu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SDp-Sb-U8k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nqc-kh-8sb" secondAttribute="trailing" id="lNn-e3-Cra"/>
+                            <constraint firstItem="P9u-K1-2B3" firstAttribute="top" secondItem="4sv-YF-Ctu" secondAttribute="bottom" constant="8" id="s2A-vD-7Ut"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="getDataButton" destination="P9u-K1-2B3" id="gfK-de-bzn"/>
+                        <outlet property="loginButton" destination="4sv-YF-Ctu" id="eKM-ea-ltz"/>
+                        <outlet property="urlButton" destination="Nqc-kh-8sb" id="Yvh-5J-gCO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244.5" y="264.5"/>
         </scene>
     </scenes>
 </document>
