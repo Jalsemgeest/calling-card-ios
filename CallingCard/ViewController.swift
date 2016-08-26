@@ -77,21 +77,24 @@ class ViewController: UIViewController {
                             
                             do {
                                 let owners = try self.dataModel.managedObjectContext.executeFetchRequest(employeesFetch) as! [Owner]
+//                                for owner in owners {
+                                    print(owners[0].getOwner())
+//                                }
                             } catch {
                                 fatalError("Failed to fetch employees: \(error)")
                             }
                             
                             
-                            let owner = NSEntityDescription.insertNewObjectForEntityForName("Owner", inManagedObjectContext: self.dataModel.managedObjectContext) as! Owner
-                            
-                            owner.email = dataDictionary["emailAddress"] as! String
-                            
-                            
-                            do {
-                                try self.dataModel.managedObjectContext.save()
-                            } catch {
-                                fatalError("Failure to save context: \(error)")
-                            }
+//                            let owner = NSEntityDescription.insertNewObjectForEntityForName("Owner", inManagedObjectContext: self.dataModel.managedObjectContext) as! Owner
+//                            
+//                            owner.email = dataDictionary["emailAddress"] as! String
+//                            
+//                            
+//                            do {
+//                                try self.dataModel.managedObjectContext.save()
+//                            } catch {
+//                                fatalError("Failure to save context: \(error)")
+//                            }
                             
                         })
                     }

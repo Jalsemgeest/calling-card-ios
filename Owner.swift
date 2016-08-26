@@ -14,4 +14,8 @@ class Owner: User {
 
 // Insert code here to add functionality to your managed object subclass
 
+    func getOwner() -> String? {
+        return self.email
+    }
+    
 }

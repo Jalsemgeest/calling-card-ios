@@ -6,12 +6,11 @@
 //  Copyright © 2016 Jalsemgeest. All rights reserved.
 //
 
-import Foundation
 import CoreData
+import Foundation
 
-
-class User: Location {
-
-// Insert code here to add functionality to your managed object subclass
-
+class User : NSManagedObject {
+    
+    // Insert code here to add functionality to your managed object subclass
+    
 }

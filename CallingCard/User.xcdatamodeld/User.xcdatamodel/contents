@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
-    <entity name="ContactModel" representedClassName=".Contact" parentEntity="UserModel" syncable="YES"/>
-    <entity name="JobModel" representedClassName=".Job" syncable="YES">
+    <entity name="Contact" representedClassName=".Contact" parentEntity="User" syncable="YES"/>
+    <entity name="Job" representedClassName=".Job" syncable="YES">
         <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="industry" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="workplace" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocationModel" inverseName="job" inverseEntity="LocationModel" syncable="YES"/>
-        <relationship name="user" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserModel" inverseName="positions" inverseEntity="UserModel" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="job" inverseEntity="Location" syncable="YES"/>
+        <relationship name="user" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="positions" inverseEntity="User" syncable="YES"/>
     </entity>
-    <entity name="LocationModel" representedClassName=".Location" syncable="YES">
+    <entity name="Location" representedClassName=".Location" syncable="YES">
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="job" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JobModel" inverseName="location" inverseEntity="JobModel" syncable="YES"/>
-        <relationship name="user" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserModel" inverseName="location" inverseEntity="UserModel" syncable="YES"/>
+        <relationship name="job" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Job" inverseName="location" inverseEntity="Job" syncable="YES"/>
+        <relationship name="user" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="location" inverseEntity="User" syncable="YES"/>
     </entity>
-    <entity name="OwnerModel" representedClassName=".Owner" parentEntity="UserModel" syncable="YES"/>
-    <entity name="UserModel" representedClassName=".User" isAbstract="YES" syncable="YES">
+    <entity name="Owner" representedClassName=".Owner" parentEntity="User" syncable="YES"/>
+    <entity name="User" representedClassName=".User" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="formattedName" optional="YES" attributeType="String" syncable="YES"/>
@@ -28,14 +28,14 @@
         <attribute name="industry" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="publicProfileUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocationModel" inverseName="user" inverseEntity="LocationModel" syncable="YES"/>
-        <relationship name="positions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JobModel" inverseName="user" inverseEntity="JobModel" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="user" inverseEntity="Location" syncable="YES"/>
+        <relationship name="positions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Job" inverseName="user" inverseEntity="Job" syncable="YES"/>
     </entity>
     <elements>
-        <element name="UserModel" positionX="-551" positionY="81" width="128" height="193"/>
-        <element name="LocationModel" positionX="-54" positionY="63" width="128" height="118"/>
-        <element name="JobModel" positionX="-189" positionY="189" width="128" height="163"/>
-        <element name="OwnerModel" positionX="-387" positionY="153" width="128" height="43"/>
-        <element name="ContactModel" positionX="-540" positionY="333" width="128" height="43"/>
+        <element name="User" positionX="-551" positionY="81" width="128" height="193"/>
+        <element name="Location" positionX="-54" positionY="63" width="128" height="118"/>
+        <element name="Job" positionX="-189" positionY="189" width="128" height="163"/>
+        <element name="Owner" positionX="-387" positionY="153" width="128" height="43"/>
+        <element name="Contact" positionX="-540" positionY="333" width="128" height="43"/>
     </elements>
 </model>

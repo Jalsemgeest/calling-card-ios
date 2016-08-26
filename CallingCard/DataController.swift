@@ -29,7 +29,7 @@ class DataController: NSObject {
             /* The directory the application uses to store the Core Data store file.
              This code uses a file named "DataModel.sqlite" in the application's documents directory.
              */
-            let storeURL = docURL.URLByAppendingPathComponent("DataModel.sqlite")
+            let storeURL = docURL.URLByAppendingPathComponent("User.sqlite")
             do {
                 try psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: storeURL, options: nil)
             } catch {
