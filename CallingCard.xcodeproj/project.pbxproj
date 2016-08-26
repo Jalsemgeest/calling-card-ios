@@ -15,6 +15,19 @@
 		C4CABA2C1D6E636C00D8F21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CABA2A1D6E636C00D8F21C /* LaunchScreen.storyboard */; };
 		C4CABA351D6E7DDC00D8F21C /* LoginWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA341D6E7DDC00D8F21C /* LoginWebViewController.swift */; };
 		C4CABA371D6E93C000D8F21C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA361D6E93C000D8F21C /* User.swift */; };
+		C4CABA3A1D6FAE2800D8F21C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA391D6FAE2800D8F21C /* Location.swift */; };
+		C4CABA3C1D6FAF0800D8F21C /* Positions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA3B1D6FAF0800D8F21C /* Positions.swift */; };
+		C4CABA3E1D6FAF2800D8F21C /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA3D1D6FAF2800D8F21C /* Job.swift */; };
+		C4CABA401D6FB29A00D8F21C /* JobDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA3F1D6FB29A00D8F21C /* JobDate.swift */; };
+		C4CABA441D6FBAC900D8F21C /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA421D6FBAC900D8F21C /* User.xcdatamodeld */; };
+		C4CABA601D6FD12C00D8F21C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA5F1D6FD12C00D8F21C /* DataController.swift */; };
+		C4CABA681D6FD39C00D8F21C /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA611D6FD39C00D8F21C /* Location+CoreDataProperties.swift */; };
+		C4CABA691D6FD39C00D8F21C /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA621D6FD39C00D8F21C /* Owner+CoreDataProperties.swift */; };
+		C4CABA6A1D6FD39C00D8F21C /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA631D6FD39C00D8F21C /* Owner.swift */; };
+		C4CABA6B1D6FD39C00D8F21C /* Job+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA641D6FD39C00D8F21C /* Job+CoreDataProperties.swift */; };
+		C4CABA6C1D6FD39C00D8F21C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA651D6FD39C00D8F21C /* User+CoreDataProperties.swift */; };
+		C4CABA6D1D6FD39C00D8F21C /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA661D6FD39C00D8F21C /* Contact+CoreDataProperties.swift */; };
+		C4CABA6E1D6FD39C00D8F21C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CABA671D6FD39C00D8F21C /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,19 @@
 		C4CABA2D1D6E636C00D8F21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4CABA341D6E7DDC00D8F21C /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWebViewController.swift; sourceTree = "<group>"; };
 		C4CABA361D6E93C000D8F21C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C4CABA391D6FAE2800D8F21C /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C4CABA3B1D6FAF0800D8F21C /* Positions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Positions.swift; sourceTree = "<group>"; };
+		C4CABA3D1D6FAF2800D8F21C /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		C4CABA3F1D6FB29A00D8F21C /* JobDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobDate.swift; sourceTree = "<group>"; };
+		C4CABA431D6FBAC900D8F21C /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		C4CABA5F1D6FD12C00D8F21C /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C4CABA611D6FD39C00D8F21C /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C4CABA621D6FD39C00D8F21C /* Owner+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Owner+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C4CABA631D6FD39C00D8F21C /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		C4CABA641D6FD39C00D8F21C /* Job+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C4CABA651D6FD39C00D8F21C /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C4CABA661D6FD39C00D8F21C /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C4CABA671D6FD39C00D8F21C /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +70,13 @@
 		C4CABA121D6E636C00D8F21C = {
 			isa = PBXGroup;
 			children = (
+				C4CABA611D6FD39C00D8F21C /* Location+CoreDataProperties.swift */,
+				C4CABA621D6FD39C00D8F21C /* Owner+CoreDataProperties.swift */,
+				C4CABA631D6FD39C00D8F21C /* Owner.swift */,
+				C4CABA641D6FD39C00D8F21C /* Job+CoreDataProperties.swift */,
+				C4CABA651D6FD39C00D8F21C /* User+CoreDataProperties.swift */,
+				C4CABA661D6FD39C00D8F21C /* Contact+CoreDataProperties.swift */,
+				C4CABA671D6FD39C00D8F21C /* Contact.swift */,
 				C4CABA1D1D6E636C00D8F21C /* CallingCard */,
 				C4CABA1C1D6E636C00D8F21C /* Products */,
 			);
@@ -60,6 +93,7 @@
 		C4CABA1D1D6E636C00D8F21C /* CallingCard */ = {
 			isa = PBXGroup;
 			children = (
+				C4CABA411D6FBA9A00D8F21C /* Data */,
 				C4CABA381D6E93C300D8F21C /* Models */,
 				C4CABA1E1D6E636C00D8F21C /* AppDelegate.swift */,
 				C4CABA201D6E636C00D8F21C /* ViewController.swift */,
@@ -85,8 +119,21 @@
 			isa = PBXGroup;
 			children = (
 				C4CABA361D6E93C000D8F21C /* User.swift */,
+				C4CABA391D6FAE2800D8F21C /* Location.swift */,
+				C4CABA3B1D6FAF0800D8F21C /* Positions.swift */,
+				C4CABA3D1D6FAF2800D8F21C /* Job.swift */,
+				C4CABA3F1D6FB29A00D8F21C /* JobDate.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		C4CABA411D6FBA9A00D8F21C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C4CABA421D6FBAC900D8F21C /* User.xcdatamodeld */,
+				C4CABA5F1D6FD12C00D8F21C /* DataController.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,11 +208,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CABA6E1D6FD39C00D8F21C /* Contact.swift in Sources */,
+				C4CABA691D6FD39C00D8F21C /* Owner+CoreDataProperties.swift in Sources */,
 				C4CABA211D6E636C00D8F21C /* ViewController.swift in Sources */,
+				C4CABA6D1D6FD39C00D8F21C /* Contact+CoreDataProperties.swift in Sources */,
+				C4CABA6C1D6FD39C00D8F21C /* User+CoreDataProperties.swift in Sources */,
+				C4CABA3C1D6FAF0800D8F21C /* Positions.swift in Sources */,
 				C4CABA351D6E7DDC00D8F21C /* LoginWebViewController.swift in Sources */,
+				C4CABA401D6FB29A00D8F21C /* JobDate.swift in Sources */,
+				C4CABA441D6FBAC900D8F21C /* User.xcdatamodeld in Sources */,
 				C4CABA271D6E636C00D8F21C /* CallingCard.xcdatamodeld in Sources */,
+				C4CABA601D6FD12C00D8F21C /* DataController.swift in Sources */,
 				C4CABA371D6E93C000D8F21C /* User.swift in Sources */,
+				C4CABA6A1D6FD39C00D8F21C /* Owner.swift in Sources */,
+				C4CABA681D6FD39C00D8F21C /* Location+CoreDataProperties.swift in Sources */,
+				C4CABA6B1D6FD39C00D8F21C /* Job+CoreDataProperties.swift in Sources */,
+				C4CABA3A1D6FAE2800D8F21C /* Location.swift in Sources */,
 				C4CABA1F1D6E636C00D8F21C /* AppDelegate.swift in Sources */,
+				C4CABA3E1D6FAF2800D8F21C /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +390,16 @@
 			);
 			currentVersion = C4CABA261D6E636C00D8F21C /* CallingCard.xcdatamodel */;
 			path = CallingCard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		C4CABA421D6FBAC900D8F21C /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4CABA431D6FBAC900D8F21C /* User.xcdatamodel */,
+			);
+			currentVersion = C4CABA431D6FBAC900D8F21C /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

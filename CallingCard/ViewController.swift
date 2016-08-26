@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
+    let dataModel = DataController()
+    
     // MARK: User
     var user : User? = nil
     
@@ -66,9 +69,29 @@ class ViewController: UIViewController {
                         
                         // Make changes as needed
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                            self.user = User(dict: dataDictionary as! NSDictionary)
+//                            self.user = User(dict: dataDictionary as! NSDictionary)
                             self.urlButton.setTitle(self.user?.publicProfileUrl, forState: UIControlState.Normal)
                             self.urlButton.hidden = false
+                            
+                            let employeesFetch = NSFetchRequest(entityName: "Owner")
+                            
+                            do {
+                                let owners = try self.dataModel.managedObjectContext.executeFetchRequest(employeesFetch) as! [Owner]
+                            } catch {
+                                fatalError("Failed to fetch employees: \(error)")
+                            }
+                            
+                            
+                            let owner = NSEntityDescription.insertNewObjectForEntityForName("Owner", inManagedObjectContext: self.dataModel.managedObjectContext) as! Owner
+                            
+                            owner.email = dataDictionary["emailAddress"] as! String
+                            
+                            
+                            do {
+                                try self.dataModel.managedObjectContext.save()
+                            } catch {
+                                fatalError("Failure to save context: \(error)")
+                            }
                             
                         })
                     }

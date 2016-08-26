@@ -54,27 +54,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CallingCard/ViewController.swift"
-            timestampString = "493786370.854416"
+            timestampString = "493867821.744103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "getLinkedInData()"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "CallingCard.ViewController.(getLinkedInData () -&gt; ()).(closure #1)"
                   moduleName = "CallingCard"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cptlightning/Documents/Projects/CallingCard/CallingCard/ViewController.swift"
-                  timestampString = "493786961.160984"
+                  timestampString = "493858758.358771"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
@@ -82,14 +82,14 @@
                   offsetFromSymbolStart = "704">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "CallingCard.ViewController.(getLinkedInData () -&gt; ()).(closure #1).(closure #1)"
                   moduleName = "CallingCard"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cptlightning/Documents/Projects/CallingCard/CallingCard/ViewController.swift"
-                  timestampString = "493786961.161151"
+                  timestampString = "493858758.358908"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -105,13 +105,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CallingCard/User.swift"
-            timestampString = "493786585.866455"
+            filePath = "CallingCard/ViewController.swift"
+            timestampString = "493867821.744103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "init(dict:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "goToUrl()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CallingCard/ViewController.swift"
-            timestampString = "493786728.36464"
+            timestampString = "493867799.093433"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "goToUrl()"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "getLinkedInData()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
